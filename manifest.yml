@@ -72,6 +72,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
 - name: appdynamics
   version: 4.5.5.2452
   uri: https://packages.appdynamics.com/php/4.5.5.2452/appdynamics-php-agent-linux_x64-4.5.5.2452.tar.bz2
@@ -79,6 +82,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docs.appdynamics.com/display/DASH/Legal+Notices
 - name: composer
   version: 1.8.0
@@ -87,6 +93,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://github.com/composer/composer/releases/download/1.8.0/composer.phar
 - name: httpd
   version: 2.4.37
@@ -94,6 +103,9 @@ dependencies:
   sha256: 303a56729e6775ecb8f76fb6710eaf3f9c58a18f4624b7e92546585b9d10f33c
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: httpd
   version: 2.4.37
   uri: https://buildpacks.cloudfoundry.org/dependencies/httpd/httpd-2.4.37-linux-x64-cflinuxfs3-269a2e7b.tgz
@@ -106,6 +118,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   sha256: be1ad4e9ff3113305bc320e6dfd33e233da7ad1b8c8815ccfbfbe99af71cafa3
 - name: nginx
   version: 1.14.2
@@ -113,6 +128,9 @@ dependencies:
   sha256: eb8c0353594f84e2a93cccc4e417264958056e1f5b720bcad014e5cc551eb329
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.14.2.tar.gz
 - name: nginx
   version: 1.14.2
@@ -127,6 +145,9 @@ dependencies:
   sha256: 48b8f05773d09ffb299b07be95f38f3d332be1fc1571bda345904223c0ab7420
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.15.8.tar.gz
 - name: nginx
   version: 1.15.8
@@ -141,6 +162,9 @@ dependencies:
   sha256: f671cca5d8bc9953a338ec279f9acac7ab72eb09552527d5b915c8b0cfb8cbfa
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -226,6 +250,9 @@ dependencies:
   sha256: 83bd915e5b18d8e851faee6b85a8ae88e2acdca9c82db52e03b7ea899a9ad140
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-5.6.39.tar.gz
   modules:
   - amqp
@@ -312,6 +339,9 @@ dependencies:
   sha256: ffd3efd7a28f9b3d815f7f31c709e9562f34df798eecd996610e5e610698eaba
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -462,6 +492,9 @@ dependencies:
   sha256: 8d668709228a8a141c9323027ac41b1a6c08977be2bbd78212d0640deeb4baa3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.0.33.tar.gz
   modules:
   - amqp
@@ -617,6 +650,9 @@ dependencies:
   sha256: ff4e7db9bbc69f82a4244bcc33ddffedf880803a55a6fcaa33caf363db851d24
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -767,6 +803,9 @@ dependencies:
   sha256: be434790c6c674d6753945b0f9dcddaf6cd0ddba7077db9b07ce1ee9ab0325c0
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.1.25.tar.gz
   modules:
   - amqp
@@ -922,6 +961,9 @@ dependencies:
   sha256: e1d96c1d5567916da678634e130ead38ea04f5b064ff43ba7dc470c06e58487a
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -1070,6 +1112,9 @@ dependencies:
   sha256: 2e7e8846d58192c8b110fd2ed8ecbdb4d55796218a20f1bb13c3e81f86a7b6a2
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.2.13.tar.gz
   modules:
   - amqp
