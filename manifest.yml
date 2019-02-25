@@ -73,30 +73,45 @@ dependencies:
   uri: https://packages.appdynamics.com/php/4.3.5.9/appdynamics-php-agent-x64-linux-4.3.5.9.tar.bz2
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   sha256: 9560965e72c0d425bc96b06c5458767c4593098a5c4b01a8dad5b1c665611e95
 - name: newrelic
   version: 7.7.0.203
   uri: https://download.newrelic.com/php_agent/archive/7.7.0.203/newrelic-php5-7.7.0.203-linux.tar.gz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   sha256: 121bd24dbf3e09c642ed5d07db83151adef780751bde30ba8132085d5cc5f36e
 - name: CAAPM
   version: 10.6.0
   uri: https://ca.bintray.com/apm-agents/CA-APM-PHPAgent-10.6.0_linux.tar.gz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   sha256: ec4430c909bd0e461977d6a7161ea573e427ff8fc09cac5f570ee6d1a9b496f5
 - name: httpd
   version: 2.4.29
   uri: https://buildpacks.cloudfoundry.org/dependencies/httpd/httpd-2.4.29-linux-x64-689e1bd2.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   sha256: 689e1bd28170ff2c16bd6bc38f6a55fe76d8969a2a58567d58ca9836f2dab96f
 - name: php
   version: 5.6.34
   uri: https://buildpacks.cloudfoundry.org/dependencies/php/php-5.6.34-linux-x64-59295e09.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -176,6 +191,9 @@ dependencies:
   sha256: 62d7316dd52104b35dc50b238fcd4e182adc44924fddc5067bcaa4ae0289ce58
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -253,6 +271,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/php7/php7-7.0.27-linux-x64-154f422e.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -310,6 +331,9 @@ dependencies:
   sha256: c96a6e23c518c1b576278fbc0896348aba9f07dceb214557b022cb4e20fcc4ea
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -374,6 +398,9 @@ dependencies:
   sha256: 569821177768bfac5b7d91228219fb483648932f67a174667725bdf260dba27b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -437,6 +464,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/php7/php7-7.1.15-linux-x64-337ce375.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -501,6 +531,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.12.2-linux-x64-60e5d131.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   sha256: f7815e32b5cb8b81562e7dbff36182aa864e596d31f520adab349edb62e2ad15
 - name: php
   version: 7.2.2
@@ -508,6 +541,9 @@ dependencies:
   sha256: a99a093eee3bbb4a14341a42a21336cd04a444f7b0055fb0aa1221bcc3b5ca91
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -569,6 +605,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/dependencies/php7/php7-7.2.3-linux-x64-a7a4469a.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -632,9 +671,15 @@ dependencies:
   sha256: 52cb7bbbaee720471e3b34c8ae6db53a38f0b759c06078a80080db739e4dcab6
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.13.9
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.13.9-linux-x64-21ff4d0f.tgz
   sha256: 21ff4d0f5a04eea7e7eec96f64333da16d275ffb6d6cb1b42cd18e99b02815d7
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
