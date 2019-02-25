@@ -1,110 +1,362 @@
 ---
 language: php
-
 exclude_files:
-  - ".git/"
-  - ".gitignore"
-  - ".gitmodules"
-  - cf_spec/
-  - log/
-  - tests/
-  - cf.Gemfile
-  - cf.Gemfile.lock
-  - bin/package
-  - buildpack-packager/
-  - php_buildpack-*v*
-
+- ".git/"
+- ".gitignore"
+- ".gitmodules"
+- cf_spec/
+- log/
+- tests/
+- cf.Gemfile
+- cf.Gemfile.lock
+- bin/package
+- buildpack-packager/
+- php_buildpack-*v*
 url_to_dependency_map:
-  - match: newrelic-php5-(\d+\.\d+\.\d+\.\d+)-linux
-    name: newrelic
-    version: "$1"
-  - match: "([^\\/]*)-(\\d+\\.\\d+\\.\\d+)"
-    name: "$1"
-    version: "$2"
-  - match: "\\/composer\\/(.*)\\/composer.phar"
-    name: composer
-    version: "$1"
-
+- match: newrelic-php5-(\d+\.\d+\.\d+\.\d+)-linux
+  name: newrelic
+  version: "$1"
+- match: "([^\\/]*)-(\\d+\\.\\d+\\.\\d+)"
+  name: "$1"
+  version: "$2"
+- match: "\\/composer\\/(.*)\\/composer.phar"
+  name: composer
+  version: "$1"
 dependencies:
-  - name: newrelic
-    version: 4.23.3.111
-    uri: https://download.newrelic.com/php_agent/archive/4.23.3.111/newrelic-php5-4.23.3.111-linux.tar.gz
-    cf_stacks:
-      - cflinuxfs2
-    md5: 069eb3a0a3522a6461c011bcd98f99a6
-  - name: httpd
-    version: 2.4.18
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/httpd/httpd-2.4.18-linux-x64.tgz
-    cf_stacks:
-      - cflinuxfs2
-    md5: 5f48cda4ba1ffa954c4d1f71b51ccf7e
-  - name: php
-    version: 5.5.30
-    modules: ["bz2", "curl", "dba", "exif", "fileinfo", "ftp", "gd", "gettext", "gmp", "imap", "ldap", "mbstring", "mcrypt", "mysql", "mysqli", "opcache", "openssl", "pcntl", "pdo", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql", "pspell", "readline", "snmp", "soap", "sockets", "xsl", "zip", "zlib", "intl", "igbinary", "imagick", "mailparse", "memcache", "mongo", "msgpack", "protocolbuffers", "redis", "sundown", "xdebug", "yaf", "amqp", "lua", "phpiredis", "protobuf", "phalcon", "suhosin", "twig", "xcache", "xhprof", "memcached", "ioncube"]
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.5.30-linux-x64-1444147920.tgz
-    cf_stacks:
-      - cflinuxfs2
-    md5: d8ac34908b34e8a3c3d63354e81dbef8
-  - name: php
-    version: 5.5.31
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.5.31-linux-x64-1453395419.tgz
-    modules: ["sockets", "mcrypt", "xdebug", "amqp", "openssl", "soap", "pcntl", "ldap", "phalcon", "pdo_mysql", "sundown", "mysql", "lua", "zip", "intl", "pdo_pgsql", "redis", "xcache", "readline", "memcached", "gettext", "curl", "igbinary", "mysqli", "phpiredis", "ioncube", "mbstring", "fileinfo", "pdo", "twig", "zlib", "imagick", "pdo_sqlite", "imap", "suhosin", "memcache", "yaf", "pspell", "protocolbuffers", "mongo", "opcache", "ftp", "msgpack", "protobuf", "snmp", "mailparse", "gmp", "bz2", "gd", "xsl", "xhprof", "dba", "pgsql", "exif"]
-    cf_stacks:
-      - cflinuxfs2
-    md5: f68ac7fe88526bce96a0d42c294f0e26
-  - name: php
-    version: 5.6.16
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.6.16-linux-x64-1449527310.tgz
-    modules: ["mysqli", "amqp", "suhosin", "gmp", "pspell", "ftp", "lua", "imap", "pgsql", "mysql", "mcrypt", "xdebug", "msgpack", "memcache", "curl", "ioncube", "xcache", "exif", "pdo", "gettext", "phalcon", "openssl", "readline", "sundown", "opcache", "zip", "mailparse", "pdo_sqlite", "imagick", "gd", "mbstring", "yaf", "xsl", "xhprof", "ldap", "phpiredis", "pdo_mysql", "protocolbuffers", "twig", "fileinfo", "memcached", "snmp", "intl", "sockets", "pdo_pgsql", "mongo", "soap", "pcntl", "dba", "protobuf", "igbinary", "redis", "zlib", "bz2"]
-    cf_stacks:
-      - cflinuxfs2
-    md5: f7a87fc71e5e4a34f7ca2716d4e90916
-  - name: php
-    version: 5.6.17
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.6.17-linux-x64-1453394784.tgz
-    modules: ["sockets", "mcrypt", "xdebug", "amqp", "openssl", "soap", "pcntl", "ldap", "phalcon", "pdo_mysql", "sundown", "mysql", "lua", "zip", "intl", "pdo_pgsql", "redis", "xcache", "readline", "memcached", "gettext", "curl", "igbinary", "mysqli", "phpiredis", "ioncube", "mbstring", "fileinfo", "pdo", "twig", "zlib", "imagick", "pdo_sqlite", "imap", "suhosin", "memcache", "yaf", "pspell", "protocolbuffers", "mongo", "opcache", "ftp", "msgpack", "protobuf", "snmp", "mailparse", "gmp", "bz2", "gd", "xsl", "xhprof", "dba", "pgsql", "exif"]
-    cf_stacks:
-      - cflinuxfs2
-    md5: 7197019a2eea782101e861727dd3cec2
-  - name: nginx
-    version: 1.8.0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/nginx/nginx-1.8.0-linux-x64.tgz
-    cf_stacks:
-      - cflinuxfs2
-    md5: e12cddcba72d5008f94b298a02a8e6d4
-  - name: nginx
-    version: 1.9.9
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/nginx/nginx-1.9.9-linux-x64.tgz
-    cf_stacks:
-      - cflinuxfs2
-    md5: b3726a282725dd999470f0dfd4b838c4
-  - name: composer
-    version: 1.0.0-alpha10
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/composer/1.0.0-alpha10/composer.phar
-    cf_stacks:
-      - cflinuxfs2
-    md5: dea8681b6f54dca9bb3a5b7deb179cca
-  - name: hhvm
-    version: 3.6.0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.6.0/hhvm-3.6.0.tar.gz
-    cf_stacks:
-      - cflinuxfs2
-    md5: a2ead8a4ff63fad7d4aebc3a340e5a56
-  - name: hhvm
-    version: 3.6.1
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.6.1/hhvm-3.6.1.tar.gz
-    cf_stacks:
-      - cflinuxfs2
-    md5: e7e4d1c83c91e731120531c42a499eb1
-  - name: hhvm
-    version: 3.5.0
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.5.0/hhvm-3.5.0.tar.gz
-    cf_stacks:
-      - cflinuxfs2
-    md5: 80e50576e1fe15986e51e04504010f74
-  - name: hhvm
-    version: 3.5.1
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.5.1/hhvm-3.5.1.tar.gz
-    cf_stacks:
-      - cflinuxfs2
-    md5: e994beaedd96f9159f7589c125e5dbf7
+- name: newrelic
+  version: 4.23.3.111
+  uri: https://download.newrelic.com/php_agent/archive/4.23.3.111/newrelic-php5-4.23.3.111-linux.tar.gz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: '069eb3a0a3522a6461c011bcd98f99a6'
+- name: httpd
+  version: 2.4.18
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/httpd/httpd-2.4.18-linux-x64.tgz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: 5f48cda4ba1ffa954c4d1f71b51ccf7e
+- name: php
+  version: 5.5.30
+  modules:
+  - bz2
+  - curl
+  - dba
+  - exif
+  - fileinfo
+  - ftp
+  - gd
+  - gettext
+  - gmp
+  - imap
+  - ldap
+  - mbstring
+  - mcrypt
+  - mysql
+  - mysqli
+  - opcache
+  - openssl
+  - pcntl
+  - pdo
+  - pdo_mysql
+  - pdo_pgsql
+  - pdo_sqlite
+  - pgsql
+  - pspell
+  - readline
+  - snmp
+  - soap
+  - sockets
+  - xsl
+  - zip
+  - zlib
+  - intl
+  - igbinary
+  - imagick
+  - mailparse
+  - memcache
+  - mongo
+  - msgpack
+  - protocolbuffers
+  - redis
+  - sundown
+  - xdebug
+  - yaf
+  - amqp
+  - lua
+  - phpiredis
+  - protobuf
+  - phalcon
+  - suhosin
+  - twig
+  - xcache
+  - xhprof
+  - memcached
+  - ioncube
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.5.30-linux-x64-1444147920.tgz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: d8ac34908b34e8a3c3d63354e81dbef8
+- name: php
+  version: 5.5.31
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.5.31-linux-x64-1453395419.tgz
+  modules:
+  - sockets
+  - mcrypt
+  - xdebug
+  - amqp
+  - openssl
+  - soap
+  - pcntl
+  - ldap
+  - phalcon
+  - pdo_mysql
+  - sundown
+  - mysql
+  - lua
+  - zip
+  - intl
+  - pdo_pgsql
+  - redis
+  - xcache
+  - readline
+  - memcached
+  - gettext
+  - curl
+  - igbinary
+  - mysqli
+  - phpiredis
+  - ioncube
+  - mbstring
+  - fileinfo
+  - pdo
+  - twig
+  - zlib
+  - imagick
+  - pdo_sqlite
+  - imap
+  - suhosin
+  - memcache
+  - yaf
+  - pspell
+  - protocolbuffers
+  - mongo
+  - opcache
+  - ftp
+  - msgpack
+  - protobuf
+  - snmp
+  - mailparse
+  - gmp
+  - bz2
+  - gd
+  - xsl
+  - xhprof
+  - dba
+  - pgsql
+  - exif
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: f68ac7fe88526bce96a0d42c294f0e26
+- name: php
+  version: 5.6.16
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.6.16-linux-x64-1449527310.tgz
+  modules:
+  - mysqli
+  - amqp
+  - suhosin
+  - gmp
+  - pspell
+  - ftp
+  - lua
+  - imap
+  - pgsql
+  - mysql
+  - mcrypt
+  - xdebug
+  - msgpack
+  - memcache
+  - curl
+  - ioncube
+  - xcache
+  - exif
+  - pdo
+  - gettext
+  - phalcon
+  - openssl
+  - readline
+  - sundown
+  - opcache
+  - zip
+  - mailparse
+  - pdo_sqlite
+  - imagick
+  - gd
+  - mbstring
+  - yaf
+  - xsl
+  - xhprof
+  - ldap
+  - phpiredis
+  - pdo_mysql
+  - protocolbuffers
+  - twig
+  - fileinfo
+  - memcached
+  - snmp
+  - intl
+  - sockets
+  - pdo_pgsql
+  - mongo
+  - soap
+  - pcntl
+  - dba
+  - protobuf
+  - igbinary
+  - redis
+  - zlib
+  - bz2
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: f7a87fc71e5e4a34f7ca2716d4e90916
+- name: php
+  version: 5.6.17
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/php/php-5.6.17-linux-x64-1453394784.tgz
+  modules:
+  - sockets
+  - mcrypt
+  - xdebug
+  - amqp
+  - openssl
+  - soap
+  - pcntl
+  - ldap
+  - phalcon
+  - pdo_mysql
+  - sundown
+  - mysql
+  - lua
+  - zip
+  - intl
+  - pdo_pgsql
+  - redis
+  - xcache
+  - readline
+  - memcached
+  - gettext
+  - curl
+  - igbinary
+  - mysqli
+  - phpiredis
+  - ioncube
+  - mbstring
+  - fileinfo
+  - pdo
+  - twig
+  - zlib
+  - imagick
+  - pdo_sqlite
+  - imap
+  - suhosin
+  - memcache
+  - yaf
+  - pspell
+  - protocolbuffers
+  - mongo
+  - opcache
+  - ftp
+  - msgpack
+  - protobuf
+  - snmp
+  - mailparse
+  - gmp
+  - bz2
+  - gd
+  - xsl
+  - xhprof
+  - dba
+  - pgsql
+  - exif
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: 7197019a2eea782101e861727dd3cec2
+- name: nginx
+  version: 1.8.0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/nginx/nginx-1.8.0-linux-x64.tgz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: e12cddcba72d5008f94b298a02a8e6d4
+- name: nginx
+  version: 1.9.9
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/nginx/nginx-1.9.9-linux-x64.tgz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: b3726a282725dd999470f0dfd4b838c4
+- name: composer
+  version: 1.0.0-alpha10
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/composer/1.0.0-alpha10/composer.phar
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: dea8681b6f54dca9bb3a5b7deb179cca
+- name: hhvm
+  version: 3.6.0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.6.0/hhvm-3.6.0.tar.gz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: a2ead8a4ff63fad7d4aebc3a340e5a56
+- name: hhvm
+  version: 3.6.1
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.6.1/hhvm-3.6.1.tar.gz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: e7e4d1c83c91e731120531c42a499eb1
+- name: hhvm
+  version: 3.5.0
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.5.0/hhvm-3.5.0.tar.gz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: 80e50576e1fe15986e51e04504010f74
+- name: hhvm
+  version: 3.5.1
+  uri: https://pivotal-buildpacks.s3.amazonaws.com/php/binaries/trusty/hhvm/3.5.1/hhvm-3.5.1.tar.gz
+  cf_stacks:
+  - cflinuxfs2
+  - dev
+  - stg
+  - pro
+  md5: e994beaedd96f9159f7589c125e5dbf7
