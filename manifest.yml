@@ -39,12 +39,18 @@ dependencies:
   uri: https://download.newrelic.com/php_agent/archive/6.3.0.161/newrelic-php5-6.3.0.161-linux.tar.gz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: 3640d3cad6b5199f54a6b54a627235d6
 - name: httpd
   version: 2.4.23
   uri: https://buildpacks.cloudfoundry.org/concourse-binaries/httpd/httpd-2.4.23-linux-x64.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: a5d5178f0f8133a65baf942a07408ba6
 - name: php
   version: 5.5.37
@@ -52,6 +58,9 @@ dependencies:
   md5: 10c24fb9e2f2188b388002fff7fef4ec
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - bz2
@@ -117,6 +126,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php/php-5.5.38-linux-x64-1474040750.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: 8d8884e813697357199760dbbefc984b
   modules:
   - amqp
@@ -184,6 +196,9 @@ dependencies:
   md5: d933038230b49e9b6ce9d056ff5dfb8e
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - bz2
@@ -250,6 +265,9 @@ dependencies:
   md5: 8c5d46ec1f6819a34f6e73151e7a2b07
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - bz2
@@ -315,6 +333,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/concourse-binaries/php7/php7-7.0.9-linux-x64-1474039427.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: 4d4b1c5b82606c1b1954fc52b866e143
   modules:
   - amqp
@@ -363,6 +384,9 @@ dependencies:
   md5: cf68ba4929fe975c9fd064440d38296d
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - bz2
@@ -409,6 +433,9 @@ dependencies:
   uri: https://buildpacks.cloudfoundry.org/concourse-binaries/nginx/nginx-1.10.1-linux-x64.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: 8b2b4d5572940d96bbb68cc10027b679
 - name: composer
   version: 1.2.1
@@ -416,9 +443,15 @@ dependencies:
   md5: 2e232b14055952d1c4e026fdec5ed882
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.11.4
   uri: https://buildpacks.cloudfoundry.org/concourse-binaries/nginx/nginx-1.11.4-linux-x64.tgz
   md5: 5a62aad3f1d7baf8e47c8a61d710848e
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
