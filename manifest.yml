@@ -60,12 +60,18 @@ dependencies:
   uri: https://download.newrelic.com/php_agent/archive/6.3.0.161/newrelic-php5-6.3.0.161-linux.tar.gz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: 3640d3cad6b5199f54a6b54a627235d6
 - name: httpd
   version: 2.4.25
   uri: https://buildpacks.cloudfoundry.org/dependencies/httpd/httpd-2.4.25-linux-x64-bf8851c4.tgz
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   md5: bf8851c45e4ef8279ae0daadc833c99e
 - name: php
   version: 5.6.30
@@ -73,6 +79,9 @@ dependencies:
   md5: 985f55e62744e17cd45d1e347c424aa2
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -142,6 +151,9 @@ dependencies:
   md5: 3c75917bd93dffabb89933cedceff081
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -211,6 +223,9 @@ dependencies:
   md5: dff4376331a2475860972aae9090b4f7
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -265,6 +280,9 @@ dependencies:
   md5: 01f33f926800a9368b9b9a9bd7d25261
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -319,6 +337,9 @@ dependencies:
   md5: 91575c84f97a007d8bd950c46ebecf89
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -371,6 +392,9 @@ dependencies:
   md5: e0f784ebf2eb7d27956fb1a5a3a96f90
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   modules:
   - amqp
   - apcu
@@ -423,27 +447,42 @@ dependencies:
   md5: 0eedfb38e587faaecedd7d05ae0d4081
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.10.3
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.10.3-linux-x64-8619f7db.tgz
   md5: 8619f7db4c1249e66b74235922b36b12
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.11.13
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.11.13-linux-x64-0ae5f6fb.tgz
   md5: 0ae5f6fbae17cffb087fea4b9518b4f7
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.12.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.12.0-linux-x64-2206fa65.tgz
   md5: 2206fa655081d6638f97afaf63b4a879
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
 - name: nginx
   version: 1.13.0
   uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.13.0-linux-x64-4debb822.tgz
   md5: 4debb822886a47e20f6bba8e9bf3577f
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
