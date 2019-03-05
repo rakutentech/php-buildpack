@@ -77,6 +77,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docops.ca.com/ca-apm/10-7/en/ca-apm-release-notes/third-party-software-acknowledgments/php-agents-third-party-software-acknowledgments
 - name: appdynamics
   version: 4.5.7.2643
@@ -85,6 +88,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docs.appdynamics.com/display/DASH/Legal+Notices
 - name: composer
   version: 1.8.4
@@ -93,6 +99,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://github.com/composer/composer/releases/download/1.8.4/composer.phar
   source_sha256: 6faf282db067f0f7625a5a1d80f4ecd3228ccc9a0388aec1599824c610d5d4e3
 - name: httpd
@@ -101,6 +110,9 @@ dependencies:
   sha256: e052e922536845c0d4ae289c182c2210de056ee0507ebd2c641d95c96e992b68
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://archive.apache.org/dist/httpd/httpd-2.4.38.tar.bz2
   source_sha256: 7dc65857a994c98370dc4334b260101a7a04be60e6e74a5c57a6dee1bc8f394a
 - name: httpd
@@ -118,6 +130,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docs.newrelic.com/docs/licenses/license-information/agent-licenses/java-agent-licenses
 - name: nginx
   version: 1.14.2
@@ -125,6 +140,9 @@ dependencies:
   sha256: eb8c0353594f84e2a93cccc4e417264958056e1f5b720bcad014e5cc551eb329
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.14.2.tar.gz
   source_sha256: 002d9f6154e331886a2dd4e6065863c9c1cf8291ae97a1255308572c02be9797
 - name: nginx
@@ -141,6 +159,9 @@ dependencies:
   sha256: ba737288448f599f736102d118b3f7976a87b640cdcffa640ea1a0b485d78a5b
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.15.9.tar.gz
   source_sha256: e4cfba989bba614cd53f3f406ac6da9f05977d6b1296e5d20a299f10c2d7ae43
 - name: nginx
@@ -157,6 +178,9 @@ dependencies:
   sha256: 83bd915e5b18d8e851faee6b85a8ae88e2acdca9c82db52e03b7ea899a9ad140
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-5.6.39.tar.gz
   source_sha256: 127b122b7d6c7f3c211c0ffa554979370c3131196137404a51a391d8e2e9c7bb
   modules:
@@ -244,6 +268,9 @@ dependencies:
   sha256: 2389be08b9e2aaeaf3f346a5f70ec45b34d4d0ba579f68123a44bcb9cfcee697
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-5.6.40.tar.gz
   source_sha256: 56fb9878d12fdd921f6a0897e919f4e980d930160e154cbde2cc6d9206a27cac
   modules:
@@ -331,6 +358,9 @@ dependencies:
   sha256: ffd3efd7a28f9b3d815f7f31c709e9562f34df798eecd996610e5e610698eaba
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.0.32.tar.gz
   source_sha256: '08d13389f611ec55f3b9164347a97e410099238a3dd85946e556a288ce366fbe'
   modules:
@@ -485,6 +515,9 @@ dependencies:
   sha256: 8d668709228a8a141c9323027ac41b1a6c08977be2bbd78212d0640deeb4baa3
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.0.33.tar.gz
   source_sha256: d71a6ecb6b13dc53fed7532a7f8f949c4044806f067502f8fb6f9facbb40452a
   modules:
@@ -642,6 +675,9 @@ dependencies:
   sha256: 47a8e3479cc2924e5455ddb5c5661dbeaeb7d43b09490af0a5cd47e6f70aa77c
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.1.25.tar.gz
   source_sha256: 7dc40e202140e8b4fb3d992c15a68d98dc06b805e6b218497d260abbe51f5958
   modules:
@@ -799,6 +835,9 @@ dependencies:
   sha256: 6288d4bf9e6b49cd42755bd5f5ca58bbc78595e7a9a295f6580cea40a4e76777
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.1.26.tar.gz
   source_sha256: '069315d3c3f964fd165bbbb3c2fc56005813e2cf97bed05055318dcc4e775328'
   modules:
@@ -956,6 +995,9 @@ dependencies:
   sha256: c23e6b39ec1b13863489b0593a16030c3e65dfff9274052746b91cca424a2618
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.2.14.tar.gz
   source_sha256: 87e13d80b0c3a66bd463d1cb47dc101335884a0d192ab924f547f8aed7f70c08
   modules:
@@ -1111,6 +1153,9 @@ dependencies:
   sha256: b11a6fb50caf131c6cd9611f6b0bcb1703023de541af8479385fe3a0cbbc7485
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.2.15.tar.gz
   source_sha256: 9b13bde9f5a32d6f6bdb8b911bb55bb818d0c4073538f8dc48aa2deb560f55a3
   modules:
