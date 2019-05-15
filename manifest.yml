@@ -67,6 +67,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docops.ca.com/ca-apm/10-7/en/ca-apm-release-notes/third-party-software-acknowledgments/php-agents-third-party-software-acknowledgments
 - name: appdynamics
   version: 4.5.9.2753
@@ -75,6 +78,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docs.appdynamics.com/display/DASH/Legal+Notices
   source_sha256: 85049bfaa3cd9e4c7e0b854fd51e315fb29fc33bf9bc8e745d37341bcc786c5f
 - name: composer
@@ -84,6 +90,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   source: https://github.com/composer/composer/releases/download/1.8.5/composer.phar
   source_sha256: 23b29b1a921b56db3c12ba531752dffcfaa3de0fcece3e54974e06990e46bbf9
 - name: httpd
@@ -92,6 +101,9 @@ dependencies:
   sha256: feb240f139dcac8d435d515ed804d7768da7da861a4641a45cd39fa623c7bee5
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://archive.apache.org/dist/httpd/httpd-2.4.39.tar.bz2
   source_sha256: b4ca9d05773aa59b54d66cd8f4744b945289f084d3be17d7981d1783a5decfa2
 - name: httpd
@@ -109,6 +121,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
   - cflinuxfs3
+  - dev
+  - stg
+  - pro
   osl: https://docs.newrelic.com/docs/licenses/license-information/agent-licenses/java-agent-licenses
 - name: nginx
   version: 1.14.2
@@ -116,6 +131,9 @@ dependencies:
   sha256: eb8c0353594f84e2a93cccc4e417264958056e1f5b720bcad014e5cc551eb329
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.14.2.tar.gz
   source_sha256: 002d9f6154e331886a2dd4e6065863c9c1cf8291ae97a1255308572c02be9797
 - name: nginx
@@ -132,6 +150,9 @@ dependencies:
   sha256: 4d0440ef3bd59478e8adae2d8bebd329b7e8fa63abdd242f3696bc28677e2f6a
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: http://nginx.org/download/nginx-1.15.12.tar.gz
   source_sha256: 3d5b90aa17de1700709ae4ec6c4d73d87c888b06c510391bf7104b006fdb2abe
 - name: nginx
@@ -156,6 +177,9 @@ dependencies:
   sha256: c89b88281097ec3885a6837094d835d8f586853d356bcfd90180515e81c4bb41
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.1.28.tar.gz
   source_sha256: 4df587338d4c5dfe27050c7ac72a6b7583ecaee9d3fbfc03427667a86e081999
   modules:
@@ -313,6 +337,9 @@ dependencies:
   sha256: e1d7bdecb135a9be85e2f44e6369168cf91262fd1e8d15cc1533cf65bba0c6dd
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.1.29.tar.gz
   source_sha256: bdd0e1707100c8b87f1be516f5b95a26e3eb4114d4316eaf0663bf292ead35bb
   modules:
@@ -470,6 +497,9 @@ dependencies:
   sha256: 0576d07b3447306a19b26ee1e8e78170bfea2fc0697be3c93a1cd27c0da366ec
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.2.17.tar.gz
   source_sha256: e1c6c2553cdb7edbfa65b89e259690ed01b31b12d57349c90b6ed00a410f62b5
   modules:
@@ -625,6 +655,9 @@ dependencies:
   sha256: 528d82cdbdf499fcac770e8822db7e8350bd1d050f0c5754ea2466fd0d02b247
   cf_stacks:
   - cflinuxfs2
+  - dev
+  - stg
+  - pro
   source: https://php.net/distributions/php-7.2.18.tar.gz
   source_sha256: 48aeb291814f3cd3ba03c52e79e8e61896d0271fd4c228198f80a072e568f84b
   modules:
